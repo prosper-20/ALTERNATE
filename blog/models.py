@@ -13,6 +13,7 @@ class Post(models.Model):
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField(upload_to="post_images")
+    slug = models.SlugField()
 
 
     def __str__(self):

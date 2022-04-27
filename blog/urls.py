@@ -3,5 +3,5 @@ from .views import home
 
 
 urlpatterns = [
-    path("")
+    path("home/", home, name="blog_home")
 ]
