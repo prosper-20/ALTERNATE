@@ -83,4 +83,4 @@ def consult(request):
         "form": form,
     }
 
-    return render(request, 'consultation.html', context)
+    return render(request, 'content/consultation.html', context)
