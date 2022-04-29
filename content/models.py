@@ -36,3 +36,11 @@ class Message(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.email}"
+
+
+class Work(models.Model):
+    image = models.ImageField(upload_to='work_images')
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.category
