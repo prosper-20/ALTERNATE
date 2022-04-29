@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
-from django import auth
-from django.contrib import messages
+from django.contrib import messages, auth
 from django.contrib.auth.models import User
 
 # Create your views here.
@@ -25,7 +24,7 @@ def register(request):
                 )
                 user.save()
                 messages.info(request, "Your account has been created successfully")
-                return redirect("index")
+                return redirect("home")
         else:
             messages.info(request, "Both passowrds do not match")
             # You just it from register.html to form-regsiter
