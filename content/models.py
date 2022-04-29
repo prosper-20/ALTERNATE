@@ -43,4 +43,4 @@ class Work(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.category
+        return(self.category.name)
