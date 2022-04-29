@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap Template</title>
+  <title>Post | {{post.slug}}</title>
   <!--  Font Awesome  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <script src="https://kit.fontawesome.com/a42d75c02e.js" crossorigin="anonymous"></script>
@@ -173,10 +173,10 @@
 
 
               <div class="mt-4 d-flex justify-content-end">
-                <span class="badge pink">Travel</span>
-                <span class="badge badge-primary mx-1">Adventure</span>
+                <span class="badge pink">{{ post.category }}</span>
+                <!-- <span class="badge badge-primary mx-1">Adventure</span>
                 <span class="badge grey mr-1">Photography</span>
-                <span class="badge badge-info">Education</span>
+                <span class="badge badge-info">Education</span> -->
               </div>
 
             </div>
