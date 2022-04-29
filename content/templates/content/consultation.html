@@ -206,10 +206,10 @@
                             </div>
                             <div class="contact-form-inner">
                                 <form  action="" method="post">
-                                    {% csrf_token %}
+                                    <!-- {% csrf_token %}
                                     {{ form|crispy }}
-                                    <div class="submit mt-30"><button type="submit">Submit</button></div>
-                                    <!-- <p class="form-messege"></p>
+                                    <div class="submit mt-30"><button type="submit">Submit</button></div> -->
+                                    <p class="form-messege"></p>
                                     <div class="form-field-top mb-20">
                                         <div class="form-field-name">
                                             <input name="first_name" type="text" maxlength="100" placeholder="First name" required id="id_first_name">
@@ -217,17 +217,20 @@
                                         <div class="form-field-name">
                                             <input name="last_name" type="text" maxlength="100" placeholder="Last name" required id="id_last_name">
                                         </div>
-                                        <div class="form-field-name">
+                                        <div class="form-field-name mb-10 mt-10">
                                             <input name="email" type="email" maxlength="254" placeholder="Your email" required id="id_email">
                                         </div>
-                                        <div class="form-field-name">
+                                        <div class="form-field-name mb-10 mt-10">
                                             <input name="phone" type="text" maxlength="25" placeholder="Your phone" required id="id_phone">
                                         </div>
-                                        <div class="form-field-name">
+                                        <div class="form-field-name mb-10 mt-10">
                                             <input name="job_title" type="text" maxlength="100" placeholder="Job Title" required id="id_job_title">
                                         </div>
-                                        <div class="form-field-name">
+                                        <div class="form-field-name mb-10 mt-10">
                                             <input name="company_name" type="text" maxlength="300" placeholder="Company Name" required id="id_company_name">
+                                        </div>
+                                        <div class="form-field-name mb-10 mt-10">
+                                            <input name="website" type="url" maxlength="200" placeholder="Website" required id="id_website">
                                         </div>
                                     </div>
                                     <div class="form-field-bottom">
@@ -235,7 +238,7 @@
                                             <textarea name="message" placeholder="Your messege"></textarea>
                                         </div>
                                         <div class="submit mt-30"><button type="submit">Submit</button></div>
-                                    </div> -->
+                                    </div>
                                 </form>
                             </div>
                         </div>
