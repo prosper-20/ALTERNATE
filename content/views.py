@@ -74,4 +74,13 @@ def consult(request):
 
             form.save()
             messages.success(request, f"Hi {first_name}, you have successfully booked a session with us. Check your mail for more details")
-            
+            return redirect('home')
+
+    else:
+        form = ConsultationForm()
+
+    context = {
+        "form": form,
+    }
+
+    return render(request, 'consultation.html', context)
