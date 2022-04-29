@@ -18,12 +18,14 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from blog.views import PostCreateView
+from users.views import register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include('content.urls')),
     path("blog/", include("blog.urls")),
-    path("post/new/", PostCreateView.as_view(), name="post_create" )
+    path("post/new/", PostCreateView.as_view(), name="post_create" ),
+    path("register/", register, name="register")
 ]
 
 if settings.DEBUG:
