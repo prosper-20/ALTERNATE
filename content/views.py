@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
-from .models import Services
+from .models import Services, Work
 from .forms import ContactForm
 from django.contrib import messages
 
 # Create your views here.
 
 def home(request):
+    works = Work.objects.all()
     if request.method == "POST":
         form = ContactForm(request.POST)
 
@@ -20,9 +21,10 @@ def home(request):
     else:
         form = ContactForm()
     context = {
-        'form': form
+        'form': form,
+        'works': works
     }
-    return render(request, 'content/home.html')
+    return render(request, 'content/home.html', context)
 
 
 def service(request):

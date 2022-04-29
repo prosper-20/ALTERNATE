@@ -60,12 +60,14 @@
 			Here are a few of them.</h3>
 	</div>
 	<ul class="work-portfolio clearfix">
+		{% for work in works %}
 		<li>
 			<figure class="portfolio-image">
-				<img src="{% static 'content/resources/img/online-advertising.png' %}" alt="Online Advertising Image">
-				<p class="work-para">Online Advertising</p>
+				<img src="{{ work.image.url }}" height="400px" width="335px" alt="Online Advertising Image">
+				<p class="work-para">{{ work.category }}</p>
 			</figure>
 		</li>
+		{% endfor %}
 		<li>
 			<figure class="portfolio-image">
 				<img src="{% static 'content/resources/img/social-media-campaigns.png' %}" alt="Social Media Campaign">
