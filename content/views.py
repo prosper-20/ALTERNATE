@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Services, Work
+from .models import Services, Work, Consultation
 from .forms import ContactForm, ConsultationForm
 from django.contrib import messages
 
@@ -63,16 +63,27 @@ def consult(request):
         form = ConsultationForm(request.POST)
 
         if form.is_valid():
-            first_name = form.cleaned_data.get("first_name")
-            last_name = form.cleaned_data.get("last_name")
-            email = form.cleaned_data.get("email")
-            phone = form.cleaned_data.get("phone")
-            job_title = form.cleaned_data.get("job_title")
-            compamy_name = form.cleaned_data.get("company_name")
-            website = form.cleaned_data.get("website")
-            message = form.cleaned_data.get("message")
+            # first_name = form.cleaned_data.get("first_name")
+            # last_name = form.cleaned_data.get("last_name")
+            # email = form.cleaned_data.get("email")
+            # phone = form.cleaned_data.get("phone")
+            # job_title = form.cleaned_data.get("job_title")
+            # compamy_name = form.cleaned_data.get("company_name")
+            # website = form.cleaned_data.get("website")
+            # message = form.cleaned_data.get("message")
+            # form.save()
+            first_name = request.POST["first_name"]
+            last_name = request.POST.get("last_name")
+            email = request.POST.get("email")
+            phone = request.POST.get("phone")
+            job_title = request.POST.get("job_title")
+            company_name = request.POST.get("company_name")
+            website = request.POST.get("website")
+            message = request.POST.get("message")
 
-            form.save()
+            consultation = Consultation.objects.create(first_name=first_name, last_name=last_name, email=email,
+            phone=phone, job_title=job_title, company_name=company_name, website=website, message=message)
+            consultation.save()
             messages.success(request, f"Hi {first_name}, you have successfully booked a session with us. Check your mail for more details")
             return redirect('home')
 
