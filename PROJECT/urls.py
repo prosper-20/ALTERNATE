@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from blog.views import PostCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include('content.urls')),
-    path("blog/", include("blog.urls"))
+    path("blog/", include("blog.urls")),
+    path("post/new/", PostCreateView.as_view(), name="post_create" )
 ]
 
 if settings.DEBUG:
