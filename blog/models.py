@@ -35,16 +35,5 @@ class Post(models.Model):
         return reverse("post_detail", kwargs={'slug': self.slug})
 
 
-class Consultation(models.Model):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    email = models.EmailField()
-    phone = models.CharField(max_length=25)
-    job_title = models.CharField(max_length=100)
-    company_name = models.CharField(max_length=300)
-    website = models.URLField()
-    message = models.TextField(help_text="How can we help of service to you?")
 
-    def __str__(self):
-        return(f"{self.first_name} - {self.email} - {self.company_name}")
 
