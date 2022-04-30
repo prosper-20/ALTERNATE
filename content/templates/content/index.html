@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Chondo Hotel | Home1</title>
+    <title>Alternate media | Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -266,87 +266,37 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title mb-75">
-                            <h2>our <span>Room</span></h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour.</p>
+                            <h2>our <span>Work</span></h2>
+                            <p>Alternate Digital Agency has had the pleasure of designing, developing and implementing 
+                                awesome digital marketing projects for a wide range of product brands and professional services firms. 
+                                Here are a few of them.</p>
                         </div>
                     </div>
                 </div>
                 <div class="our-room-show">
                     <div class="row">
                         <div class="carousel-list">
+                            {% for work in works %}
                             <div class="col-md-4">
                                 <div class="single-room">
                                     <div class="room-img">
-                                        <a href="#"><img src="images/room/room1.jpg" alt=""></a>
+                                        <a href="#"><img src="{{ work.image.url }}" alt=""></a>
                                     </div>
                                     <div class="room-desc">
                                         <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
+                                            <h3><a href="#">{{ work.category }}</a></h3>
                                         </div>
-                                        <div class="room-rent">
+                                        <!-- <div class="room-rent">
                                             <h5>€ 200 / <span>Night</span></h5>
-                                        </div>
+                                        </div> -->
                                         <div class="room-book">
-                                            <a href="#">Book now</a>
+                                            <a href="#">Check it out</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>€ 200 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>€ 200 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>€ 200 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
+                            {% endfor %}
+                            <!-- <div class="col-md-4">
                                 <div class="single-room">
                                     <div class="room-img">
                                         <a href="#"><img src="images/room/room2.jpg" alt=""></a>
@@ -436,6 +386,60 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="single-room">
+                                    <div class="room-img">
+                                        <a href="#"><img src="images/room/room1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="room-desc">
+                                        <div class="room-name">
+                                            <h3><a href="#">Delux room</a></h3>
+                                        </div>
+                                        <div class="room-rent">
+                                            <h5>€ 200 / <span>Night</span></h5>
+                                        </div>
+                                        <div class="room-book">
+                                            <a href="#">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-room">
+                                    <div class="room-img">
+                                        <a href="#"><img src="images/room/room2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="room-desc">
+                                        <div class="room-name">
+                                            <h3><a href="#">Delux room</a></h3>
+                                        </div>
+                                        <div class="room-rent">
+                                            <h5>€ 200 / <span>Night</span></h5>
+                                        </div>
+                                        <div class="room-book">
+                                            <a href="#">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-room">
+                                    <div class="room-img">
+                                        <a href="#"><img src="images/room/room3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="room-desc">
+                                        <div class="room-name">
+                                            <h3><a href="#">Delux room</a></h3>
+                                        </div>
+                                        <div class="room-rent">
+                                            <h5>€ 200 / <span>Night</span></h5>
+                                        </div>
+                                        <div class="room-book">
+                                            <a href="#">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -449,7 +453,9 @@
                     <div class="col-md-12">
                         <div class="section-title mb-80">
                             <h2>our <span>services</span></h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour.</p>
+                            <p>WE OFFER 360° DIGITAL MARKETING SERVICES THAT SEES A BRAND PROJECT FROM
+                                INCEPTION TILL THE END. FROM BRAND DEVELOPMENT TO WEB DEVELOPMENT, CONTENT DEVELOPMENT, 
+                                CUSTOMER ENGAGEMENT ETC.</p>
                         </div>
                     </div>
                 </div>
@@ -457,6 +463,7 @@
             <div class="our-services-list">
                 <div class="container-fluid">
                     <div class="row">
+                        {% for service in services %}
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="single-services">
                                 <div class="services-img">
@@ -477,7 +484,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        {% endfor %}
+                        <!-- <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="single-services">
                                 <div class="services-img">
                                     <img src="images/services/services2.jpg" alt="">
@@ -536,7 +544,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -787,19 +795,22 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="testimonial-list">
                             <div class="single-testimonial">
-                                <h2>Louis Smith</h2>
-                               <p>There are many variations of passages of Lorem I available, but the majority have suffered alteration in som, d humour, or randomised words which
-    </p>
+                                <h2>Moses/h2>
+                                <blockquote>
+                                    Alternate media has done a wonderful job redesigning our website to take it from plain and functional to amazingly professional. 
+                                </blockquote>
                             </div>
                             <div class="single-testimonial">
-                                <h2>Louis Smith</h2>
-                               <p>There are many variations of passages of Lorem I available, but the majority have suffered alteration in som, d humour, or randomised words which
-    </p>
+                                <h2>Johnson</h2>
+                                <blockquote>
+                                    I would highly recommend Alternate media to any business that needs a hand improving their internet traffic or their business.
+                                </blockquote>
                             </div>
                             <div class="single-testimonial">
-                                <h2>Louis Smith</h2>
-                               <p>There are many variations of passages of Lorem I available, but the majority have suffered alteration in som, d humour, or randomised words which
-    </p>
+                                <h2>Deborah</h2>
+                                <blockquote>
+                                    I don't even know where to start from. As far as Advertising goes this Agency has really made it so easy and effective, thank you!
+                                </blockquote>
                             </div>
                         </div>
                     </div>
@@ -846,7 +857,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title mb-80">
-                            <h2>our <span>News</span></h2>
+                            <h2>our <span>Blog</span></h2>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour.</p>
                         </div>
                     </div>
@@ -854,9 +865,10 @@
                 <div class="news-list">
                     <div class="row">
                         <div class="col-md-12 pb-80">
+                            {% for post in posts %}
                             <div class="news-inner">
                                 <div class="news-img">
-                                    <img src="images/news/n-1.jpg" alt="">
+                                    <img src="" alt="">
                                     <div class="news-post">
                                         <div class="n-date">15 June 2015</div>
                                         <a href="#" class="comment"><span><i class="mdi mdi-comment-processing-outline"></i></span> 20</a>
