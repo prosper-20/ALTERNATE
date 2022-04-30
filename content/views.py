@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Services, Work, Consultation, Post
+from .models import Services, Work, Consultation
+from blog.models import Post
 from .forms import ContactForm, ConsultationForm
 from django.contrib import messages
 
@@ -29,7 +30,7 @@ def home(request):
         "posts": posts
     }
     # You chnaged this from home.html to index.html
-    return render(request, 'content/index.html', context)
+    return render(request, 'content/content_index.html', context)
 
 
 # def index(request):
