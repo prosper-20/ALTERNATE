@@ -27,8 +27,8 @@ def register(request):
                 return redirect("home")
         else:
             messages.info(request, "Both passowrds do not match")
-            # You just it from register.html to form-regsiter
-    return render(request, 'users/register.html')
+            # You just it from register.html to regsiter_1
+    return render(request, 'users/register_1.html')
 
 def login(request):
     if request.method == "POST":
