@@ -57,6 +57,53 @@
     Google fonts here
 --------*/
 
+/* YOU JUST ADDED THESE FOR THE HOME PAGE BOOK A SESSION FORM */
+/***** CONTACT FORM SECTION ******/
+
+.contact-section {
+	text-align:center;
+}
+
+.contact-heading {
+	color:#000;
+	margin-top:150px;
+	margin-bottom:50px;
+}
+
+.contact-form {
+	text-align:left;
+	width:60%;
+	margin:0 auto;
+	color:#555;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width:100%;
+	padding:8px;
+	border-radius:3px;
+	border:1px solid #ccc;
+	background-color:#fff;
+}
+
+input[type=submit] {
+	border:0;
+}
+
+input[type=checkbox] {
+	margin: 10px 5px 10px 0;
+}
+
+textarea {
+	height:100px;
+}
+
+*:focus {
+	outline:none;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,500,600|Raleway:300,400,500,600,700');
 @font-face {
 	font-family: 'Montserrat';
