@@ -30,22 +30,22 @@ def register(request):
             # You just it from register.html to form-regsiter
     return render(request, 'users/register.html')
 
-# def login(request):
-#     if request.method == "POST":
-#         username = request.POST['username']
-#         password = request.POST['password']
+def login(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
 
-#         user = auth.authenticate(username=username, password=password)
+        user = auth.authenticate(username=username, password=password)
 
-#         if user is not None:
-#             auth.login(request, user)
-#             # messages.success(request, "You are logged in")
-#             return redirect('/')
-#         else:
-#             messages.error(request, "Credentials not valid")
-#             return redirect("login")
-#     #You changed from login.htnl to form-login
-#     return render(request, 'login.html')
+        if user is not None:
+            auth.login(request, user)
+            # messages.success(request, "You are logged in")
+            return redirect('/')
+        else:
+            messages.error(request, "Credentials not valid")
+            return redirect("login")
+    #You changed from login.htnl to form-login
+    return render(request, 'users/login.html')
 
 # def logout(request):
 #     auth.logout(request)
