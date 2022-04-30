@@ -139,6 +139,17 @@ textarea {
 	padding-bottom:20px;
 }
 
+ .js--about-box {
+	animation-duration:1s;
+}
+
+/* .js--about-box.animate__animated {
+	opacity:1;
+}
+
+.js--service-box {
+	animation-duration:1.5s;
+}  */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,500,600|Raleway:300,400,500,600,700');
 @font-face {
