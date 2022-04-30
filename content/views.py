@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Services, Work, Consultation
+from .models import Services, Work, Consultation, Post
 from .forms import ContactForm, ConsultationForm
 from django.contrib import messages
 
@@ -7,6 +7,8 @@ from django.contrib import messages
 
 def home(request):
     works = Work.objects.all()
+    posts = Post.objects.all()
+
     if request.method == "POST":
         form = ContactForm(request.POST)
 
@@ -23,7 +25,8 @@ def home(request):
         form = ContactForm()
     context = {
         'form': form,
-        'works': works
+        'works': works,
+        "posts": posts
     }
     # You chnaged this from home.html to index.html
     return render(request, 'content/index.html', context)
