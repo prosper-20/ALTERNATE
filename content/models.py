@@ -23,7 +23,7 @@ class Services(models.Model):
     content = models.TextField()
 
     class Meta:
-        verbose_name_plural = "Service"
+        verbose_name_plural = "Services"
 
 
     def __str__(self):
@@ -58,3 +58,5 @@ class Consultation(models.Model):
 
     def __str__(self):
         return(f"{self.first_name} - {self.email} - {self.company_name}")
+
+
