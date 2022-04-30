@@ -28,6 +28,30 @@ def home(request):
     return render(request, 'content/home.html', context)
 
 
+def index(request):
+    works = Work.objects.all()
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+
+        if form.is_valid():
+            # username = form.cleaned_data.get('name')
+            # email = form.cleaned_data.get('email')
+            # message = form.cleaned_data.get('message')
+            form.save()
+            
+            # messages.success(request, f"Hi {username} your message has been received.")
+            return redirect('home')
+
+    else:
+        form = ContactForm()
+    context = {
+        'form': form,
+        'works': works
+    }
+    return render(request, 'content/index.html', context)
+
+
+
 def service(request):
     services = Services.objects.all()
     context = {
