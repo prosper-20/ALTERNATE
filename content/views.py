@@ -9,6 +9,7 @@ from django.contrib import messages
 def home(request):
     works = Work.objects.all()
     posts = Post.objects.all()
+    services = Services.objects.all()
 
     if request.method == "POST":
         form = ContactForm(request.POST)
@@ -27,7 +28,8 @@ def home(request):
     context = {
         'form': form,
         'works': works,
-        "posts": posts
+        "posts": posts,
+        "services": services
     }
     # You chnaged this from home.html to index.html
     return render(request, 'content/content_index.html', context)
