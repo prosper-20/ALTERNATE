@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from blog.views import PostCreateView
-from users.views import register, login
+from users.views import register, login, profile
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,7 +26,8 @@ urlpatterns = [
     path("blog/", include("blog.urls")),
     path("post/new/", PostCreateView.as_view(), name="post_create" ),
     path("register/", register, name="register"),
-    path("login/", login, name="login")
+    path("login/", login, name="login"),
+    path('profile/', profile, name="profile"),
 ]
 
 if settings.DEBUG:
