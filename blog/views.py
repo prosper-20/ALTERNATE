@@ -1,6 +1,7 @@
 from pyexpat import model
 from django.shortcuts import render
-from .models import Post
+from .models import Post, Comment
+from .forms import CommentForm
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 # Create your views here.
