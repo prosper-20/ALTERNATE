@@ -350,91 +350,43 @@
         <!--Main wrapper-->
         <div class="comments-list text-center text-md-left mb-5">
           <div class="text-center mb-4">
-            <h3 class="font-weight-bold pt-3 mb-5">Comments <span class="badge pink">3</span></h3>
+            <h3 class="font-weight-bold pt-3 mb-5">Comments <span class="badge pink">{{ post.comments.count }}</span></h3>
           </div>
+          {% if not post.comments.all %}
+          <!-- <p>No comment yet <a href="{% url 'post_comments' post.pk %}">Add one</a></p> -->
+          <p>No comment yet <a href="{% url 'post_comments' post.pk %}"><i class="fas fa-comment" style="color: cadetblue;">Add one</i></a></p>
+          {% else %}
           <!--First row-->
+          {% for comment in post.comments.all %}
           <div class="row mb-4">
             <!--Image column-->
             <div class="col-sm-2 col-12 mb-md-0 mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (9).jpg" class="avatar rounded-circle z-depth-1-half">
+              <img src="{{ comment.name.profile.image.url }}" class="avatar rounded-circle z-depth-1-half">
             </div>
             <!--/.Image column-->
 
             <!--Content column-->
             <div class="col-sm-10 col-12">
               <a>
-                <h4 class="font-weight-bold">Tom Smith</h4>
+                <h4 class="font-weight-bold">{{ comment.name }}</h4>
               </a>
               <div class="mt-2">
                 <ul class="list-unstyled">
-                  <li class="comment-date"><i class="fas fa-clock"></i> 05/10/2015</li>
+                  <li class="comment-date"><i class="fas fa-clock"></i>{{ comment.date_added|date:"F d, Y" }}</li>
                 </ul>
               </div>
-              <p class="grey-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+              <p class="grey-text">{{ comment.body}}</p>
             </div>
             <!--/.Content column-->
-
           </div>
+          {% endfor %}
           <!--/.First row-->
-
+          <a href="{% url 'post_comments' post.pk %}" class="btn btn-primary me-1">
+            <i class="fas fa-comments me-2"></i>Add comment
+        </a>
+        {% endif %}
           <!--Second row-->
-          <div class="row mb-4">
-            <!--Image column-->
-            <div class="col-sm-2 col-12 mb-md-0 mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="avatar rounded-circle z-depth-1-half">
-            </div>
-            <!--/.Image column-->
-
-            <!--Content column-->
-            <div class="col-sm-10 col-12">
-              <a>
-                <h4 class="font-weight-bold">Marta Tev</h4>
-              </a>
-              <div class="mt-2">
-                <ul class="list-unstyled">
-                  <li class="comment-date"><i class="fas fa-clock"></i> 08/10/2015</li>
-                </ul>
-              </div>
-              <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-            </div>
-            <!--/.Content column-->
-
-          </div>
-          <!--/.Second row-->
-
-          <!--Third row-->
-          <div class="row mb-4">
-
-            <!--Image column-->
-            <div class="col-sm-2 col-12 mb-md-0 mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (10).jpg" class="avatar rounded-circle z-depth-1-half">
-            </div>
-            <!--/.Image column-->
-            <!--Content column-->
-            <div class="col-sm-10 col-12">
-              <a>
-                <h4 class="font-weight-bold">Anna Maria</h4>
-              </a>
-              <div class="mt-2">
-                <ul class="list-unstyled">
-                  <li class="comment-date"><i class="fas fa-clock"></i> 17/10/2015</li>
-                </ul>
-              </div>
-              <p class="grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum
-                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia.
-              </p>
-            </div>
-            <!--/.Content column-->
-          </div>
-          <!--/.Third row-->
+         
         </div>
         <!--/.Main wrapper-->
 

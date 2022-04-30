@@ -1,7 +1,9 @@
+import imp
 from pyexpat import model
 from django.shortcuts import render
 from .models import Post, Comment
 from .forms import CommentForm
+from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 # Create your views here.
@@ -77,7 +79,7 @@ class PostCommentView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse_lazy('post_detail', kwargs={'pk': self.kwargs['pk']})
+        return reverse_lazy('post_detail', kwargs={'slug': self.kwargs['slug']})
 
 
 
