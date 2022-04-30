@@ -319,12 +319,12 @@
           <div class="row">
             <!--Avatar-->
             <div class="col-12 col-md-2 mb-md-0 mb-4">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="img-fluid rounded-circle z-depth-2">
+              <img src="{{ post.author.profile.image.url }}" class="img-fluid rounded-circle z-depth-2">
             </div>
             <!--Author Data-->
             <div class="col-12 col-md-10">
               <h5 class="font-weight-bold dark-grey-text mb-3">
-                <strong>John Doe</strong>
+                <strong>{{ post.author }}</strong>
               </h5>
               <div class="personal-sm pb-3">
                 <a class="fb-ic pr-2"><i class="fab fa-facebook-f mr-2"> </i></a>
