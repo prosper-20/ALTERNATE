@@ -103,6 +103,42 @@ textarea {
 	outline:none;
 }
 
+/* YOU JUST ADDED THIS FOR THE ABOUT SECTION */
+/***** ABOUT SECTION *****/
+
+.laptop-image {
+	width:80%;
+}
+
+.about-heading {
+	color:#000;
+	font-size:250%;
+	font-weight:500;
+	margin-bottom:50px;
+}
+
+.about-para {
+	color:#555;
+	margin-bottom:50px;
+	line-height: 130%;
+}
+
+.about-box {
+	margin-top:150px;
+}
+
+.about-box:first-child {
+	text-align:left;
+	padding:0 5%;
+}
+.about-box:last-child {
+	text-align:right;
+}
+
+.about-section {
+	padding-bottom:20px;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,500,600|Raleway:300,400,500,600,700');
 @font-face {
