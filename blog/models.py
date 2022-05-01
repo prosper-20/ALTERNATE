@@ -40,6 +40,8 @@ class Comment(models.Model):
     name = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField('Enter your commment...')
     date_added = models.DateTimeField(auto_now_add=True)
+    # This was added from the web
+    active = models.BooleanField(default=False)
 
 
     def __str__(self):
