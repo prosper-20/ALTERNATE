@@ -83,7 +83,7 @@ class PostCommentView(LoginRequiredMixin, CreateView):
 
 # YOU ADDED THIS FROM THE WEB
 def post_detail(request, slug):
-    template_name = 'post_detail.html'
+    template_name = 'blog/web_post_detail.html'
     post = get_object_or_404(Post, slug=slug)
     comments = post.comments.filter(active=True)
     new_comment = None
