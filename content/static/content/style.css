@@ -1038,7 +1038,7 @@ p.welcome-desc {
   margin-top: 51px;
 }
 .staff-tesimonial {
-  background: rgba(0, 0, 0, 0) url("images/bg/testimonial.jpg") no-repeat fixed center center / cover ;
+  background: rgba(0, 0, 0, 0) url("https://www.adssentialmarketing.com/wp-content/uploads/2020/12/advertising-marketing-agency-1024x512.jpg") no-repeat fixed center center / cover ;
   padding: 128px 0 138px;
   position: relative;
 }
@@ -1307,7 +1307,7 @@ h3.news-title {
 	15. Deafault Footer Css here
 --------------------------*/
 .footer{
-  background: url(images/bg/footer.jpg)no-repeat scroll center center;
+  background: url(https://digitalmarketingdeal.com/blog/wp-content/uploads/2021/05/digital-marketing-agency.png) no-repeat scroll center center;
   background-size: cover;
 }
 .footer-bg-opacity {
