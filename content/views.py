@@ -126,3 +126,7 @@ def consult(request):
     }
 
     return render(request, 'content/consultation.html', context)
+
+
+def about(request):
+    return render(request, "content/about_us.html")
