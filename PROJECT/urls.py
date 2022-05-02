@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from blog.views import PostCreateView
 from users.views import register, login, profile
-from content.views import about
+from content.views import about, gallery
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,7 +29,8 @@ urlpatterns = [
     path("register/", register, name="register"),
     path("login/", login, name="login"),
     path('profile/', profile, name="profile"),
-    path("about-us/", about, name="about")
+    path("about-us/", about, name="about"),
+    path("gallery/", gallery, name="gallery")
 ]
 
 if settings.DEBUG:

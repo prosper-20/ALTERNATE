@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Services, Work, Consultation
+from .models import Services, Work, Consultation, Gallery
 from blog.models import Post
 from .forms import ContactForm, ConsultationForm
 from django.contrib import messages
@@ -130,5 +130,13 @@ def consult(request):
 
 def about(request):
     return render(request, "content/about_us.html")
+
+
+def gallery(request):
+    gallery = Gallery.objects.all()
+    context = {
+        "gallery": gallery
+    }
+    return render(request, "content/gallery.html", context)
 
 
