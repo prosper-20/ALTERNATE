@@ -1230,11 +1230,11 @@ h3.news-title {
   width: 25%;
 }
 .hotel-cmmunities {
-  background: rgba(0, 0, 0, 0) url("images/bg/communities.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("https://www.yourtango.com/sites/default/files/image_blog/things-genuinely-happy-people-know.jpg") no-repeat scroll center center / cover ;
   position: relative;
 }
 .hotel-cmmunities.style2{
-  background: url(images/bg/1.jpg)no-repeat fixed center center;
+  background: url(images/bg/1.jpg) no-repeat fixed center center;
   background-size: cover
 }
 .hotel-cmmunities.style3{
