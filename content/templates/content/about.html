@@ -1,0 +1,795 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alternate Media | About us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{% static 'blog/images/apple-touch-icon.png' %}" type="images/x-icon" rel="shortcut icon">
+    <!-- Place favicon.ico in the root directory -->
+    
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="{% static 'new_css/bootstrap.min.css' %}">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="{% static 'new_css/core.css' %}">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="{% static 'new_css/shortcode/shortcodes.css' %}">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="{% static 'new_style.css'%}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'new_css/responsive.css' %}">
+    <!-- customizer style css -->
+    <link rel="stylesheet" href="{% static 'new_css/style-customizer.css' %}">
+    <link href="#" data-style="styles" rel="stylesheet">    
+    
+    <!-- User style -->
+    <link rel="stylesheet" href="{% static 'new_css/custom.css' %}">
+
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'new_js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> 
+        <!-- Pre Loader
+	============================================ -->
+	<div class="preloader">
+		<div class="loading-center">
+			<div class="loading-center-absolute">
+				<div class="object object_one"></div>
+				<div class="object object_two"></div>
+				<div class="object object_three"></div>
+			</div>
+		</div>
+	</div>
+
+    
+    <div class="wrapper">
+        <!--Header section start-->
+        <div class="header-section about-us">
+            <div class="bg-opacity"></div>
+            <div class="top-header sticky-header">
+                <div class="top-header-inner">
+                    <div class="container">
+                        <div class="mgea-full-width">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <div class="logo mt-15">
+                                        <a href="index.html"><img src="images/logo/logo.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 col-sm-10 hidden-xs">
+                                    <div class="header-top ptb-10">
+                                        <div class="adresses">
+                                            <div class="phone">
+                                                <p>call <span>+012 345 678 102 </span></p>
+                                            </div>
+                                            <div class="email">
+                                                <p>Email: <span>info@example.com</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="social-links">
+                                            <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                            <a href="#"><i class="mdi mdi-rss"></i></a>
+                                            <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                            <a href="#"><i class="mdi mdi-pinterest"></i></a>
+                                            <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="menu mt-20">
+                                        <div class="menu-list hidden-sm hidden-xs">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href="index.html">home</a></li>
+                                                    <li><a href="about-us.html">About</a></li>
+                                                    <li><a href="gallery.html">Gallery</a></li>
+                                                    <li><a href="#">pages<i class="fa fa-angle-down"></i></a>
+                                                        <ul class="dropdown_menu">
+                                                            <li><a href="404.html">404</a></li>
+															<li><a href="booking-information.html">Booking Information</a></li>
+															<li><a href="personal-information.html">Personal Information</a></li>
+															<li><a href="payment-information.html">Parment Information</a></li>
+															<li><a href="booking-done.html">Booking Done</a></li>
+															<li><a href="room-booking.html">Room booking</a></li>
+															<li><a href="news.html">News</a></li>
+															<li><a href="gallery.html">Gallery</a></li>
+															 <li><a href="staff.html">Staff</a></li>
+															<li><a href="our-room.html">Room</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="contact-us.html">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="search-bar-icon">
+                                           <a class="search-open" href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                 <!-- Mobile menu start -->
+                 <div class="mobile-menu-area hidden-lg hidden-md">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <nav id="dropdown">
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about-us.html">About</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="#">pages</a>
+                                    <ul>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="booking-information.html">Booking Information</a></li>
+                                        <li><a href="personal-information.html">Personal Information</a></li>
+                                        <li><a href="payment-information.html">Parment Information</a></li>
+                                        <li><a href="booking-done.html">Booking Done</a></li>
+                                        <li><a href="room-booking.html">Room booking</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="staff.html">Staff</a></li>
+                                        <li><a href="our-room.html">Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html">contact</a></li>
+                            </ul>
+                        </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile menu end -->
+            </div>
+            <!--Welcome secton-->
+            <div class="welcome-section text-center ptb-110">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcurbs-inner">
+                                <div class="breadcrubs">
+                                    <h2>About us</h2>
+                                    <div class="breadcrubs-menu">
+                                        <ul>
+                                            <li><a href="#">Home<i class="mdi mdi-chevron-right"></i></a></li>
+                                            <li>About us</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Header section end-->
+        <!-- search bar Start -->
+        <div class="search-bar animated slideOutUp">
+                <div class="table">
+                    <div class="table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <div class="search-form-wrap">
+                                        <button class="close-search"><i class="mdi mdi-close"></i></button>
+                                        <form action="#">
+                                            <input type="text" placeholder="Search here..." value="Search here..."/>
+                                            <button class="search-button" type="submit">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- search bar End -->
+        <!--About Section Title start-->
+        <div class="about-section text-center ptb-80 white_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title mb-80">
+                            <h2>About <span>Alternate Media</span></h2>
+                            <p>A community of unique tech savy individuals with the sole aim of developing,
+                                supporting and actualizing various goals of brands & businesses.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="about-chondo">
+                            <div class="about-member">
+                                <img src="https://images.unsplash.com/photo-1637684666587-91e51b10a555?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=462&q=80" alt="">
+                                <h3>Edward Prosper</h3>
+                                <h5 class="mb-0">Founder</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About Section end-->
+        <!--Hotel Exlusive offer start-->
+        <div class="hotel-exclusive ptb-100 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-exclusive">
+                            <h3>Exclusive</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-exclusive">
+                            <h3>Complimentary</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-exclusive">
+                            <h3>Earn Points</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-exclusive">
+                            <h3>Join For Free</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hotel Exlusive offer end-->
+        <!--Hotel feature start-->
+        <div class="hotel-feature pt-80 white_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="feature-desc text-left">
+                            <div class="section-title mb-30">
+                                <h2>Feature <span>ALTERNATE MEDIA</span></h2>
+                                <p>Alternate media proffers businesses an avenue to lay the blueprint while
+                                    handling its materialization. With each memeber vast in 
+                                    diverse areas of Tech, we provide an all-encompasing
+                                    service to our clients with the sole aim of 100% efficiency.
+                                    We pride ourselves as modern day business architects.</p>
+                            </div>
+                            <div class="feature-item">
+                                    <p>
+                                        Provide the blueprint and watch us build!
+                                        At A.M.A, there is no one. There is only we! We are the Alternative
+                                        you have been searching for to take your business to greater heights. If
+                                        efficiency is our goal, what is yours? Take this chance and watch us
+                                        transform your brand & business
+                                    </p>
+                                    <!-- <li>
+                                        <span>2.</span>Useassage of Lorem Ipsum, you need to be sure thereng .
+                                    </li>
+                                    <li>
+                                        <span>3.</span>Ay injected huor randomised words which don't .
+                                    </li>
+                                    <li>
+                                        <span>4.</span>By sage of Lorem Ipsum, you need to be sure thereng en in the.
+                                    </li> -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="feature-img-tab">
+                            <div class="feature-tab-desc">
+                                <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="feature1">
+                                <div class="feature-tab-inner">
+                                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YWR2ZXJ0aXNpbmclMjBhZ2VuY3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="feature2">
+                                <div class="feature-tab-inner">
+                                    <img src="https://web-static.wrike.com/blog/content/uploads/2020/07/The-Importance-of-Corporate-Branding-1.jpg?av=48e88f0386f45a57275440013b62de0f" alt="">
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="feature-tab-item">
+                                <ul class="nav" role="tablist">
+                                    <li class="active"><a href="#feature1" data-toggle="tab"><img src="https://wsiaxon.com/wp-content/uploads/2017/11/xl-2017-content-marketing-1.jpg" alt=""></a></li>
+                                    <li><a href="#feature2" data-toggle="tab"><img src="https://web-static.wrike.com/blog/content/uploads/2020/07/The-Importance-of-Corporate-Branding-1.jpg?av=48e88f0386f45a57275440013b62de0f" alt=""></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hotel feature end-->
+        <!--Our staff start-->
+        <div class="our-staff text-center ptb-80 white_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title mb-80">
+                            <h2>our <span>Staff</span></h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff-list">
+                    <div class="row">
+                        <div class="carousel-list">
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff1.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff2.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff3.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff1.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff2.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff3.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff1.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff2.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-staff">
+                                    <div class="sraff-inner">
+                                        <img src="images/staff/staff3.jpg" alt="">
+                                        <div class="staff-title">
+                                            <span class="plus"></span>
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+
+                                        </div>
+                                        <div class="staff-hover-desc">
+                                            <h2>Soleman</h2>
+                                            <h5>hotel staff</h5>
+                                            <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr.</p>
+                                            <div class="scoial_icons">
+                                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                <a href="#"><i class="mdi mdi-rss"></i></a>
+                                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                                <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Our staff end-->
+        <!--Testimonial start-->
+        <div class="staff-tesimonial text-center ptb-140">
+            <div class="testimonail-bg-opacity"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="testimonial-list">
+                            <div class="single-testimonial">
+                                <h2>Our Vision</h2>
+                                <p>
+                                    To enable brands and business retain authenticity while ensuring its growth
+                                </p>
+                            </div>
+                            <div class="single-testimonial">
+                                <h2>Our Mission</h2>
+                                <p>
+                                    To elevate the niche of digital marketing to the favour of your brands & businesses
+                                </p>
+                            </div>
+                            <div class="single-testimonial">
+                                <h2>What we stand for</h2>
+                                <p>
+                                    Alternate media is set wih the sole aim of digital expansion. We are determined to provide
+                                    clients an interface that allows for uniqueness while guaranteeing effective
+                                    results for their brands and businesses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Testimonial end-->
+        <!--hotel team start-->
+        <div class="hotel-team pt-100 white_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="team-brand pb-100">
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-1.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-4.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-3.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-4.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-5.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-1.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-4.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-3.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-4.jpg" alt=""></a>
+                            </div>
+                            <div class="single-team">
+                                <a href="#"><img src="images/brand/b-5.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="newsletter">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="newsletter-title">
+                                        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="newsletter-form">
+                                        <form id="mc-form" class="mc-form" >
+											<input id="mc-email" type="email" autocomplete="off" placeholder="Enter Address..." />
+											<button id="mc-submit" type="submit">Subscribe</button>
+										</form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--hotel team end-->
+        <!--Footer start -->
+        <div class="footer ptb-100">
+            <div class="footer-bg-opacity"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="single-footer mt-0">
+                            <div class="logo">
+                                <img src="images/logo/logo.png" alt="">
+                            </div>
+                            <div class="f-adress">
+                                <p><span>Address:</span> 10 Obe Street, Off Ajao Road, Ikeja, Lagos.</p>
+                            </div>
+                            <div class="hotel-contact">
+                                <p><span>phone:</span> +234 9036356792</p>
+                                <p><span>Email:</span> alternatemediang@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm col-xs-6">
+                        <div class="single-footer">
+                           <h3>Quick Links</h3>
+                           <div class="quick-item">
+                                <ul>
+                                   <li><a href="#">Rooms</a></li>
+                                   <li><a href="#">Food & Drinks</a></li>
+                                   <li><a href="#">Manifesto</a></li>
+                                   <li><a href="#">Beach Venues</a></li>
+                                   <li><a href="#">Wellness</a></li>
+                                   <li><a href="#">Contact</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="single-footer">
+                            <h3>Get in touch</h3>
+                            <div class="get-touch">
+                                <p>There are many varins of passages of Lorem Ipsum available, but</p>
+                                <div class="get-conatct">
+                                    <form action="#">
+                                       <input type="text" value="Your name">
+                                       <input type="text" value="Your email">
+                                       <button type="submit">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="single-footer">
+                            <h3>instagram</h3>
+                            <div class="instagram-post">
+                                <div class="single-post">
+                                    <a href="#"><img src="https://blog.hubspot.com/hubfs/testimonial-request-template-1.jpg" alt=""></a>
+                                </div>
+                                <div class="single-post">
+                                    <a href="#"><img src="https://blog.hubspot.com/hubfs/testimonial-request-template-1.jpg" alt=""></a>
+                                </div>
+                                <div class="single-post">
+                                    <a href="#"><img src="https://blog.hubspot.com/hubfs/testimonial-request-template-1.jpg" alt=""></a>
+                                </div>
+                                <div class="single-post">
+                                    <a href="#"><img src="images/instagram/ins-4.jpg" alt=""></a>
+                                </div>
+                                <div class="single-post">
+                                    <a href="#"><img src="images/instagram/ins-5.jpg" alt=""></a>
+                                </div>
+                                <div class="single-post">
+                                    <a href="#"><img src="images/instagram/img-6.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright ptb-20 white_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-12">
+                        <p>Copyright© Alternate Media 2022.All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-4 col-xs-12">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Term of use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer end -->
+    </div>
+
+
+
+
+
+
+
+  <!-- Placed js at the end of the document so the pages load faster -->
+
+     <!-- jquery latest version -->
+     <script src="{% static 'new_js/vendor/jquery-1.12.0.min.js' %}"></script>
+     <!-- Bootstrap framework js -->
+     <script src="{% static 'new_js/bootstrap.min.js' %}"></script>
+     <!--counter up js-->
+     <script src="{% static 'new_js/waypoints.min.js' %}"></script>
+     <script src="{% static 'new_js/jquery.counterup.min.js' %}"></script>
+     <!-- Video player js -->
+     <script src="{% static 'new_js/video-player.js' %}"></script>
+     <!-- headlines js -->
+     <script src="{% static 'new_js/animated-headlines.js' %}"></script>
+     <!-- Ajax mail js -->
+     <script src="{% static 'new_js/mailchimp.js' 5}"></script>
+     <!-- Ajax mail js -->
+     <script src="j{% static 'new_js/ajax-mail.js' %}"></script>
+     <!-- parallax js -->
+     <script src="{% static 'new_js/parallax.js' %}"></script>
+     <!-- textilate js -->
+     <script src="{% static 'new_js/textilate.js' %}"></script>
+     <script src="{% static 'new_js/lettering.js' %}"></script>
+     <!--isotope js-->
+     <script src="{% static 'new_js/isotope.pkgd.min.js' %}"></script>
+     <script src="{% static 'new_js/packery-mode.pkgd.min.js' %}"></script>
+     <!-- Style Customizer Js  -->
+     <script src="{% static 'new_js/style-customizer.js' %}"></script>
+     <!-- Owl carousel Js -->
+     <script src="{% static 'new_js/owl.carousel.min.js' %}"></script>
+     <!--Magnificant js-->
+     <script src="{% static 'new_js/jquery.magnific-popup.js' %}"></script>
+     <!-- All js plugins included in this file. -->
+     <script src="{% static 'new_js/plugins.js' %}"></script>
+     <!-- Main js file that contents all jQuery plugins activation. -->
+     <script src="{% static 'new_js/main.js' %}"></script>
+ 
+ </body>
+ 
+ </html>
