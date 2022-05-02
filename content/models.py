@@ -41,6 +41,7 @@ class Message(models.Model):
 class Work(models.Model):
     image = models.ImageField(upload_to='work_images')
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    link = models.URLField()
 
     def __str__(self):
         return(self.category.name)
