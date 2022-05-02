@@ -61,3 +61,11 @@ class Consultation(models.Model):
         return(f"{self.first_name} - {self.email} - {self.company_name}")
 
 
+class Gallery(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="gallery_pics")
+
+    def __str__(self):
+        return self.name
+
+
