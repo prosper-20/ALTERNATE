@@ -1424,7 +1424,7 @@ h3.news-title {
    16.1 Home two Header Css here
 ----------------------------*/
 .header-section.static2{
-  background: url(images/bg/h2-bg.jpg)no-repeat scroll center center;
+  background: url(images/bg/h2-bg.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 .menu nav ul li.logo {
