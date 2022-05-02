@@ -70,10 +70,10 @@
                                     <div class="header-top ptb-10">
                                         <div class="adresses">
                                             <div class="phone">
-                                                <p>call <span>+012 345 678 102 </span></p>
+                                                <p>call <span>+234 916 558 2857 </span></p>
                                             </div>
                                             <div class="email">
-                                                <p>Email: <span>info@example.com</span></p>
+                                                <p>Email: alternatemediang@gmail.com</p>
                                             </div>
                                         </div>
                                         <div class="social-links">
@@ -88,8 +88,8 @@
                                         <div class="menu-list hidden-sm hidden-xs">
                                             <nav>
                                                 <ul>
-                                                    <li><a href="index.html">home</a></li>
-                                                    <li><a href="about-us.html">About</a></li>
+                                                    <li><a href="{% url 'home' %}">home</a></li>
+                                                    <li><a href="{% url 'about' %}">About</a></li>
                                                     <li><a href="gallery.html">Gallery</a></li>
                                                     <li><a href="#">pages<i class="fa fa-angle-down"></i></a>
                                                         <ul class="dropdown_menu">
@@ -124,8 +124,8 @@
                         <div class="col-md-12">
                             <nav id="dropdown">
                             <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about-us.html">About</a></li>
+                                <li><a href="{% url 'home' %}">home</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="#">pages</a>
                                     <ul>
@@ -159,7 +159,7 @@
                                     <h2>About us</h2>
                                     <div class="breadcrubs-menu">
                                         <ul>
-                                            <li><a href="#">Home<i class="mdi mdi-chevron-right"></i></a></li>
+                                            <li><a href="{% url 'home' %}">Home<i class="mdi mdi-chevron-right"></i></a></li>
                                             <li>About us</li>
                                         </ul>
                                     </div>
@@ -662,10 +662,10 @@
                                 <img src="images/logo/logo.png" alt="">
                             </div>
                             <div class="f-adress">
-                                <p><span>Address:</span> 10 Obe Street, Off Ajao Road, Ikeja, Lagos.</p>
+                                <p><span>Address:</span> 1 Adelabu Close, Off Toyin Street, Ikeja, Lagos</p>
                             </div>
                             <div class="hotel-contact">
-                                <p><span>phone:</span> +234 9036356792</p>
+                                <p><span>Phone:</span> +234 916 558 2857</p>
                                 <p><span>Email:</span> alternatemediang@gmail.com</p>
                             </div>
                         </div>
@@ -702,8 +702,13 @@
                     </div>
                      <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single-footer">
-                            <h3>instagram</h3>
-                            <div class="instagram-post">
+                            <h3>Check us out</h3>
+                            <ul class="col span_1_of_2" style="line-height: 200%;">
+                                <li style="color: white;">Facebook</li>
+                                <li style="color: white;">Instagram</li>
+                                <li style="color: white;">Twitter</li>
+                            </ul>
+                            <!-- <div class="instagram-post">
                                 <div class="single-post">
                                     <a href="#"><img src="https://blog.hubspot.com/hubfs/testimonial-request-template-1.jpg" alt=""></a>
                                 </div>
@@ -722,7 +727,7 @@
                                 <div class="single-post">
                                     <a href="#"><img src="images/instagram/img-6.jpg" alt=""></a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

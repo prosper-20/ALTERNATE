@@ -129,4 +129,4 @@ def consult(request):
 
 
 def about(request):
-    return render(request, "content/about.html")
+    return render(request, "content/about_us.html")
