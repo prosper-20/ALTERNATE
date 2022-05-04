@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig'
+    'django_social_share'
 ]
 
 MIDDLEWARE = [
