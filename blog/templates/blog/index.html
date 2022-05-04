@@ -1,4 +1,5 @@
 {% load static %}
+{% load social_share %}
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -233,6 +234,10 @@
                                                     <a href="#"><i class="mdi mdi-rss"></i></a>
                                                     <a href="#"><i class="mdi mdi-google-plus"></i></a>
                                                     <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                                    <!-- YOU ADDED THIS TO TEST THE DJANGO SOCIAL SHARE -->
+                                                    {% post_to_facebook post.title <style></style> "Post to Facebook!" %}
+                                                    {% post_to_whatsapp  post.title "Share To WA" %}
+                                                    {% post_to_reddit  post.title "Share To Reddit" %}
                                                 </div>
                                             </div>
                                         </div>

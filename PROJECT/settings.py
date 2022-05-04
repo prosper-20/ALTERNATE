@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'content.apps.ContentConfig',
     'crispy_forms',
     'blog.apps.BlogConfig',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
     'django_social_share'
 ]
 
