@@ -13,6 +13,9 @@
     <!-- Place favicon.ico in the root directory -->
     
     <!-- All css files are included here. -->
+    <!-- YOU ADDED THESE FOR FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://kit.fontawesome.com/a42d75c02e.js" crossorigin="anonymous"></script>
     <!-- Bootstrap fremwork main css -->
     <link rel="stylesheet" href="{% static 'content/css/bootstrap.min.css' %}">
     <!-- This core.css file contents all plugings css file. -->
@@ -63,7 +66,7 @@
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-12">
                                     <div class="logo mt-15">
-                                        <a href="index.html"><img src="images/logo/logo.png" alt=""></a>
+                                        <a href="index.html"><img src="{% static 'users/images/Alternate_Media_1-removebg.png' %}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-md-10 col-sm-10 hidden-xs">
@@ -165,15 +168,15 @@
                                         {% csrf_token %}
                                         <div class="b-date arrive mb-15">
                                             <input type="text" name="name" id="" placeholder="Your Name" required_id="id_name">
-                                            <i class="mdi mdi-calendar-text"></i>
+                                            <i class="fa fa-user"></i>
                                         </div>
                                         <div class="b-date departure mb-15">
                                             <input type="email" name="email" id="" placeholder="Your email" required_id="id_email">
-                                            <i class="mdi mdi-calendar-text"></i>
+                                            <i class="fa fa-envelope"></i>
                                         </div>
                                         <div class="b-date departure mb-15">
                                             <input type="text" name="message" id="" placeholder="Your message" required_id="id_message"></textarea>
-                                            <i class="mdi mdi-calendar-text"></i>
+                                            <i class="fa fa-pen"></i>
                                         </div>
                                         <!-- <div class="select-book mb-15">
                                             <select name="book" class="select-booking">
