@@ -230,14 +230,20 @@
                                                 </div>
                                                 <div class="news-share">
                                                     <p>Share:</p>
-                                                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                                    <div>
+                                                    {% post_to_facebook post.title '<i class="mdi mdi-facebook"></i>' %}
+                                                    {% post_to_facebook post.title '<i class="mdi mdi-rss"></i>' %}
+                                                    {% post_to_facebook post.title '<i class="mdi mdi-google-plus"></i>' %}
+                                                    {% post_to_facebook post.title '<i class="mdi mdi-instagram"></i>' %}
+                                                    </div>
+                                                    <!-- <a href="#"><i class="mdi mdi-facebook"></i></a>
                                                     <a href="#"><i class="mdi mdi-rss"></i></a>
                                                     <a href="#"><i class="mdi mdi-google-plus"></i></a>
-                                                    <a href="#"><i class="mdi mdi-instagram"></i></a>
+                                                    <a href="#"><i class="mdi mdi-instagram"></i></a> -->
                                                     <!-- YOU ADDED THIS TO TEST THE DJANGO SOCIAL SHARE -->
-                                                    {% post_to_facebook post.title "Post to Facebook!" %}
+                                                    <!-- {% post_to_facebook post.title "Post to Facebook!" %}
                                                     {% post_to_whatsapp  post.title "Share To WA" %}
-                                                    {% post_to_reddit  post.title "Share To Reddit" %}
+                                                    {% post_to_reddit  post.title "Share To Reddit" %} -->
                                                 </div>
                                             </div>
                                         </div>
