@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="{% static 'blog/images/apple-touch-icon.png' %}" type="images/x-icon" rel="shortcut icon">
+    <link href="{% static 'blog/images/apple-touch-icon_1.png' %}" type="images/x-icon" rel="shortcut icon">
     <!-- Place favicon.ico in the root directory -->
     
     <!-- All css files are included here. -->
@@ -63,17 +63,18 @@
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-12">
                                     <div class="logo mt-15">
-                                        <a href="index.html"><img src="images/logo/logo.png" alt=""></a>
+                                        <a href="{% url 'home' %}"><img src="{% static 'users/images/enlarged.png' %}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-md-10 col-sm-10 hidden-xs">
                                     <div class="header-top ptb-10">
                                         <div class="adresses">
                                             <div class="phone">
-                                                <p>call <span>+012 345 678 102 </span></p>
+                                                <p>call: <span>+234 916 558 2857 </span></p>
                                             </div>
                                             <div class="email">
-                                                <p>Email: <span>info@example.com</span></p>
+                                                <p>Email: alternatemediang@gmail.com</p>
+                                                <!-- <h6 style="color: antiquewhite;">Email: alternatemediang@gmail.com</h6> -->
                                             </div>
                                         </div>
                                         <div class="social-links">
@@ -88,24 +89,24 @@
                                         <div class="menu-list hidden-sm hidden-xs">
                                             <nav>
                                                 <ul>
-                                                    <li><a href="index.html">home</a></li>
-                                                    <li><a href="about-us.html">About</a></li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
+                                                    <li><a href="{% url 'home' %}">home</a></li>
+                                                    <li><a href="{% url 'about' %}">About</a></li>
+                                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
                                                     <li><a href="#">pages<i class="fa fa-angle-down"></i></a>
                                                         <ul class="dropdown_menu">
                                                             <li><a href="404.html">404</a></li>
-															<li><a href="booking-information.html">Booking Information</a></li>
-															<li><a href="personal-information.html">Personal Information</a></li>
+															<li><a href="booking-information.html">Book A Session</a></li>
+															<li><a href="personal-information.html">Agent Chat</a></li>
 															<li><a href="payment-information.html">Parment Information</a></li>
 															<li><a href="booking-done.html">Booking Done</a></li>
 															<li><a href="room-booking.html">Room booking</a></li>
-															<li><a href="news.html">News</a></li>
-															<li><a href="gallery.html">Gallery</a></li>
-															 <li><a href="staff.html">Staff</a></li>
-															<li><a href="our-room.html">Room</a></li>
+															<li><a href="{% url 'blog_home' %}">News</a></li>
+															<li><a href="{% url 'gallery' %}">Gallery</a></li>
+															 <!-- <li><a href="staff.html">Staff</a></li>
+															<li><a href="our-room.html">Room</a></li> -->
                                                         </ul>
                                                     </li>
-                                                    <li><a href="contact-us.html">Contact</a></li>
+                                                    <li><a href="{% url 'contact' %}">Contact</a></li>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -327,7 +328,7 @@
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single-footer mt-0">
                             <div class="logo">
-                                <img src="images/logo/logo.png" alt="">
+                                <a href="{% url 'home' %}"><img src="{% static 'users/images/enlarged.png' %}" alt=""></a>
                             </div>
                             <div class="f-adress">
                                 <p><span>Address:</span> ur address goes here,street Crossroad123.</p>
