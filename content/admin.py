@@ -12,7 +12,7 @@ admin.site.register(Gallery)
 
 
 class MessageAmin(admin.ModelAdmin):
-    list_display = ['name', 'email']
+    list_display = ['name', 'email', 'message']
 
 
 
