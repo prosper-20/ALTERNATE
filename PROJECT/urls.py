@@ -35,3 +35,9 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = 'Alternate Media'
+
+admin.site.index_title = 'Alternate Media'                 # default: "Site administration"
+admin.site.site_title = 'Admin' # default: "Django site admin"
