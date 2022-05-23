@@ -3,6 +3,11 @@ from .models import Services, Work, Consultation, Gallery
 from blog.models import Post
 from .forms import ContactForm, ConsultationForm
 from django.contrib import messages
+from django.conf import settings
+from django.core.mail import EmailMessage, send_mail
+from django.template.loader import render_to_string
+from django.core.mail import EmailMessage, send_mail
+from sendgrid.helpers.mail import SandBoxMode, MailSettings
 
 # Create your views here.
 
@@ -115,6 +120,15 @@ def consult(request):
             consultation = Consultation.objects.create(first_name=first_name, last_name=last_name, email=email,
             phone=phone, job_title=job_title, company_name=company_name, website=website, message=message)
             consultation.save()
+            mydict = {'first_name': first_name}
+            html_template = 'content/consultation_email.html'
+            html_message = render_to_string(html_template, context=mydict)
+            subject = 'Booking Session Confirmation'
+            email_from = settings.EMAIL_HOST_USER
+            recipient_list = [email]
+            message = EmailMessage(subject, html_message,
+                                   email_from, recipient_list)
+            message.content_subtype = 'html'
             messages.success(request, f"Hi {first_name}, you have successfully booked a session with us. Check your mail for more details")
             return redirect('home')
 

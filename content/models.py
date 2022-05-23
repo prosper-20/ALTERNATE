@@ -54,7 +54,7 @@ class Consultation(models.Model):
     phone = models.CharField(max_length=25)
     job_title = models.CharField(max_length=100)
     company_name = models.CharField(max_length=300)
-    website = models.URLField()
+    website = models.URLField(blank=True, null=True)
     message = models.TextField(help_text="How can we help of service to you?")
 
     def __str__(self):
