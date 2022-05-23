@@ -69,3 +69,12 @@ class Gallery(models.Model):
         return self.name
 
 
+class Staff(models.Model):
+    name = models.CharField(max_length=100)
+    job = models.CharField(max_length=150)
+    image = models.ImageField(upload_to="staff_images")
+
+    def __str__(self):
+        return self.name
+
+

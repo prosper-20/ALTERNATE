@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Services, Message, Work, Consultation, Gallery
+from .models import Category, Services, Message, Work, Consultation, Gallery, Staff
 
 # Register your models here.
 
@@ -23,3 +23,10 @@ class ConsultationAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Consultation, ConsultationAdmin)
+
+
+class StaffAdmin(admin.ModelAdmin):
+    list_display = ['name', 'job']
+
+
+admin.site.register(Staff, StaffAdmin)

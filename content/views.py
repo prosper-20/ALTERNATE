@@ -129,6 +129,7 @@ def consult(request):
             message = EmailMessage(subject, html_message,
                                    email_from, recipient_list)
             message.content_subtype = 'html'
+            message.send()
             messages.success(request, f"Hi {first_name}, you have successfully booked a session with us. Check your mail for more details")
             return redirect('home')
 
